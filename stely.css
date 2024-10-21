@@ -58,6 +58,10 @@ body {
   border-style: dashed;
   border-width: 10px;
   padding:1.5%;
+width: 90%;
+justify-content: center;
+display: flex;
+align-items: center;
 
 
 
@@ -70,6 +74,8 @@ body {
     height: 100vh;
     justify-content: center;
 flex-direction: column;
+
+
 
 }
 
@@ -131,3 +137,35 @@ flex-direction: column;
   
   
 }
+
+
+
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 600px) {
+  .nome {
+    font-size: 3em;
+    border-width: 7px;
+    padding:1.5%;
+  width: 80%;
+  margin-left: 40px;
+  margin-right: 40px;
+  
+  }
+}
+
+/* Media Query para tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+  .nome {
+    font-size: 4em;
+  }
+}
+
+/* Media Query para desktops */
+@media (min-width: 901px) {
+  .nome {
+    font-size: 5em;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  }
