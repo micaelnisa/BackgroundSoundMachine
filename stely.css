@@ -1,0 +1,133 @@
+/* Fundo animado arco-íris */
+
+*{
+    padding: 0;
+margin: 0;
+}
+
+.autor{
+    font-family: "Pixelify Sans", sans-serif;
+    width: 100vw;
+    font-optical-sizing: auto;
+    font-size: 1em;
+    color: white;
+    font-style: normal;
+    position:absolute;
+    bottom: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   margin-bottom: 1%;
+}
+body {
+    background: linear-gradient(270deg, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+    background-size: 1400% 1400%;
+  
+    -webkit-animation: rainbow 80s ease infinite;
+    -moz-animation: rainbow 80 ease infinite;
+    animation: rainbow 80s ease infinite;
+  }
+  
+  @-webkit-keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  @-moz-keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  @keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .nome {
+
+
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-size: 5em;
+  font-style: normal;
+  color: white;
+  border-style: dashed;
+  border-width: 10px;
+  padding:1.5%;
+
+
+
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+flex-direction: column;
+
+}
+
+.enter{
+    font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-size: 1em;
+  
+    display: flex;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .3em;
+  margin-top: 100px;
+}
+
+
+
+/* CSS */
+.button-92 {
+   
+  --c: #fff;
+  /* text color */
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    #23ae25;
+  /* background color */
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+
+.button-92:hover,
+.button-92:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.button-92:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+
+
+.animate__animated.animate__fadeInDown{
+    --animate-duration: 2s;
+}
+
+.animate__animated.animate__bounceIn{
+    --animate-duration: 1s;
+  
+  
+}
